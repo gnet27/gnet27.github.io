@@ -1,0 +1,20 @@
+{
+  "short_name": "Gnet",
+  "name": "Gnet27",
+  "icons": [
+    {
+      "src": "/images/icons-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "theme_color": "#3367D6"
+}
