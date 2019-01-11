@@ -1,42 +1,225 @@
+
+
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
+
   <meta charset="UTF-8">
-  <title>CSS splitting a splash screen</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://cineplex.zendesk.com/hc/article_attachments/115020896448/G.png" />
+  <link rel="mask-icon" type="" href="https://cineplex.zendesk.com/hc/article_attachments/115020896448/G.png" color="#111" />
+  <title>Gnet27</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link href='//fonts.googleapis.com/css?family=ZCOOL+KuaiLe|ZCOOL+KuaiLe:400,700|ZCOOL+KuaiLe:4:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   
-      <link rel="stylesheet" href="css/style.css">
+      <style>
+      * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+body {
+  font-family: "ZCOOL KuaiLe", serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  height: auto;
+  padding-bottom: 80px;
+  background: #FF5733 url("https://miguelquispe.com/pen//hero.jpg") center top no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+}
+.hero h1 {
+  margin: 50px 0 20px;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-size: 35px;
+}
+.hero h1 span {
+  font: 700 60px/1 "ZCOOL KuaiLe", cursive;
+  display: block;
+}
+.hero h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 20px;
+}
+@media only screen and (min-width: 37.5em) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h1 span {
+    font-size: 76px;
+  }
+  .hero h2 {
+    width: 76%;
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 1120px;
+}
+
+.section {
+  padding: 60px 0;
+}
+.section__title {
+  font-size: 24px;
+  color: #3EC2E5;
+  text-align: center;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  margin: 14px 0;
+}
+.section__intro {
+  display: block;
+  text-align: center;
+  margin: 0 5% 30px;
+}
+@media only screen and (min-width: 43.75em) {
+  .section__intro {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+.section--cta {
+  color: #454545;
+  background: #f1f1f1;
+}
+
+.box {
+  display: flex;
+  flex: 1 0 100%;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+.box__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box__title {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+}
+.box__more {
+  color: #ff4e5c;
+}
+.box__content {
+  color: #454545;
+  text-align: center;
+  padding: 20px;
+}
+.box__content > i {
+  color: #3BD06B;
+}
+.box__content:hover .box__more {
+  color: #ff3545;
+}
+.box__content:hover .box__more i {
+  padding-left: 4px;
+  transition: all .2s ease-in-out;
+}
+@media only screen and (min-width: 43.75em) {
+  .box {
+    flex: 0 0 30%;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 12px 18px;
+  border-radius: 100px;
+  background: #ff4e5c;
+}
+.btn:hover {
+  background: #ff3545;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  background: #3BD06B;
+}
+.footer p {
+  opacity: .65;
+}
+
+    </style>
 
   
+  
+  
+  
+
 </head>
 
-<body>
-
-  <!-- Pen content -->
-<div class="wrap">
-  <div class="deck js-scene">
-    <div class="text centered" title="Welcome to Gnet27"></div>
-  </div>
-  <div class="surprise">
-    <div class="centered">
-      <h1>Gnet27 is</h1>
-      <h3>coming soon!</h3>
-      <p>(Site planned to come on Jan 1)</p>
-    </div>
-  </div>
-</div> <!-- /content -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<body translate="no" >
 
   
+<section class="hero">
+  <h1><span>Welcome</span>To Gnet27</h1>
+</section>
+<section class="section">
+  <div class="wrapper">
+    <h2 class="section__title">Quick links</h2>
+    <p class="section__intro">
+      Welcome to Gnet27. Here we have useful tools such as web development, business tools, games, coding, entertainment and other. If you want to see all the links on this website, click the link down below.
+      
+      
+    </p>
+    <div class="box__grid">
+      <article class="box"><a class="box__content" href="https://www.gnet27.ml/terminal"><i class="fa fa-code fa-3x"></i>
+          <h3 class="box__title">Terminal</h3>
+          <p>Enjoy the all new Gnet27 free terminal. Click on this tab to  veiw more info and access the terminal.</p><span class="box__more">Lets go! <i class="fa fa-arrow-right"></i></span></a></article>
+      <article class="box"><a class="box__content" href="https://www.gnet27.ml/games"><i class="fa fa-gamepad fa-3x"></i>
+          <h3 class="box__title">Games</h3>
+          <p>Gnet27 has all new cool free web games. Click this tab to veiw more info about our games.</p><span class="box__more">Lets go <i class="fa fa-arrow-right"></i></span></a></article>
+      <article class="box"><a class="box__content" href="https://coins.gnet27.ml"><i class="fa fa-btc fa-3x"></i>
+          <h3 class="box__title">Cryptocurrency Ticker</h3>
+          <p>Gnet has an all new clean Cryptocurrency ticker including, bitcoin, bitcoin cash, litcoin and ethereum. Click this tab to launch.</p><span class="box__more">Lets go! <i class="fa fa-arrow-right"></i></span></a></article>
+    </div>
+  </div>
+</section>
+<div class="section section--cta">
+  <div class="wrapper">
+    <h2 class="section__title">More</h2>
+    <p class="section__intro">Click the button down below </p><a class="btn" href="https://github.com/gnet27?tab=repositories">ALL LINKS</a>
+  </div>
+</div>
+<div class="footer">
+  <p>&copy; 2019 Gnet27</p>
+</div>
+  
+  
+  
+  
+  
 
-    <script  src="js/index.js"></script>
-
-
-
-
+  <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
 </body>
 
 </html>
+ 
